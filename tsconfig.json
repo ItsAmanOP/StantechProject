@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "jsx": "react"
+  },
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "moduleResolution": "node16",
+  "module": "esnext", // optional but recommended with node16
+  "target": "esnext", // optional
+  "allowSyntheticDefaultImports": true,
+  "esModuleInterop": true,
+}
