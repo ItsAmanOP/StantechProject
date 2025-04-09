@@ -13,3 +13,9 @@ export const store = configureStore({
 });
 
 sagaMiddleware.run(rootSaga);
+
+// Inferred state type: {todos: TodosState, counter: CounterState}
+export type RootState = ReturnType<typeof store.getState>
+
+// Inferred dispatch type: Dispatch & ThunkDispatch<RootState, undefined, UnknownAction>
+export type AppDispatch = typeof store.dispatch
